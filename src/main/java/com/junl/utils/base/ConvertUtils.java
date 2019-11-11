@@ -7,21 +7,19 @@ import java.text.SimpleDateFormat;
  * 转换工具类<br>
  * 若待转换值为null或者出现异常，则使用默认值
  *
- * @Author:chenssy
+ * @Author:wukailun
  * @date:2016年5月21日 上午10:18:12
  */
 public class ConvertUtils {
-	
+
 	/**
 	 * 字符串转换为int
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:16:27
 	 *
-	 * @param str	
-	 * 					待转换的字符串
-	 * @param defaultValue
-	 * 					默认值
+	 * @param str          待转换的字符串
+	 * @param defaultValue 默认值
 	 * @return
 	 */
 	public static int strToInt(String str, int defaultValue) {
@@ -35,13 +33,11 @@ public class ConvertUtils {
 	/**
 	 * String转换为long
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:18:44
 	 *
-	 * @param str
-	 * 					待转换字符串
-	 * @param defaultValue
-	 * 					默认值
+	 * @param str          待转换字符串
+	 * @param defaultValue 默认值
 	 * @return
 	 */
 	public static long strToLong(String str, long defaultValue) {
@@ -51,15 +47,15 @@ public class ConvertUtils {
 		}
 		return defaultValue;
 	}
-	
+
 	/**
 	 * 字符串转换为float
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:19:12
 	 *
 	 * @param str
-	 * 				
+	 * 
 	 * @param defaultValue
 	 * @return
 	 */
@@ -74,13 +70,11 @@ public class ConvertUtils {
 	/**
 	 * String转换为Double
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:21:59
 	 *
-	 * @param str
-	 * 					待转换字符串
-	 * @param defaultValue
-	 * 					默认值
+	 * @param str          待转换字符串
+	 * @param defaultValue 默认值
 	 * @return
 	 */
 	public static double strToDouble(String str, double defaultValue) {
@@ -94,34 +88,29 @@ public class ConvertUtils {
 	/**
 	 * 字符串转换日期
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:27:01
 	 *
-	 * @param str
-	 * 						待转换的字符串
-	 * @param defaultValue
-	 * 						默认日期
+	 * @param str          待转换的字符串
+	 * @param defaultValue 默认日期
 	 * @return
 	 */
-	public static java.util.Date strToDate(String str,java.util.Date defaultValue) {
+	public static java.util.Date strToDate(String str, java.util.Date defaultValue) {
 		return strToDate(str, "yyyy-MM-dd HH:mm:ss", defaultValue);
 	}
 
 	/**
 	 * 字符串转换为指定格式的日期
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:27:24
 	 *
-	 * @param str
-	 * 					待转换的字符串
-	 * @param format
-	 * 					日期格式
-	 * @param defaultValue
-	 * 					默认日期
+	 * @param str          待转换的字符串
+	 * @param format       日期格式
+	 * @param defaultValue 默认日期
 	 * @return
 	 */
-	public static java.util.Date strToDate(String str, String format,java.util.Date defaultValue) {
+	public static java.util.Date strToDate(String str, String format, java.util.Date defaultValue) {
 		SimpleDateFormat fmt = new SimpleDateFormat(format);
 		try {
 			defaultValue = fmt.parse(str);
@@ -133,13 +122,11 @@ public class ConvertUtils {
 	/**
 	 * 日期转换为字符串
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:28:05
 	 *
-	 * @param date
-	 * 				待转换的日期
-	 * @param defaultValue
-	 * 				默认字符串
+	 * @param date         待转换的日期
+	 * @param defaultValue 默认字符串
 	 * @return
 	 */
 	public static String dateToStr(java.util.Date date, String defaultValue) {
@@ -149,15 +136,12 @@ public class ConvertUtils {
 	/**
 	 * 日期转换为指定格式的字符串
 	 * 
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:28:51
 	 *
-	 * @param date
-	 * 				待转换的日期
-	 * @param format
-	 * 				指定格式
-	 * @param defaultValue
-	 * 				默认值
+	 * @param date         待转换的日期
+	 * @param format       指定格式
+	 * @param defaultValue 默认值
 	 * @return
 	 */
 	public static String dateToStr(java.util.Date date, String format, String defaultValue) {
@@ -172,13 +156,11 @@ public class ConvertUtils {
 	/**
 	 * 如果字符串为空则使用默认字符串
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:29:35
 	 *
-	 * @param str
-	 * 				字符串
-	 * @param defaultValue
-	 * 				默认值
+	 * @param str          字符串
+	 * @param defaultValue 默认值
 	 * @return
 	 */
 	public static String strToStr(String str, String defaultValue) {
@@ -190,7 +172,7 @@ public class ConvertUtils {
 	/**
 	 * util date 转换为 sqldate
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:30:09
 	 *
 	 * @param date
@@ -203,7 +185,7 @@ public class ConvertUtils {
 	/**
 	 * sql date 转换为 util date
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:30:26
 	 *
 	 * @param date
@@ -216,7 +198,7 @@ public class ConvertUtils {
 	/**
 	 * date 转换为 timestamp
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:30:51
 	 *
 	 * @param date
@@ -229,7 +211,7 @@ public class ConvertUtils {
 	/**
 	 * timestamp 转换为date
 	 *
-	 * @author:chenssy
+	 * @author:wukailun
 	 * @date : 2016年5月21日 上午10:31:13
 	 *
 	 * @param date

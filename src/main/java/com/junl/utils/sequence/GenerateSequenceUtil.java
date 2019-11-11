@@ -11,7 +11,7 @@ import java.util.Calendar;
  * 根据时间生成唯一序列ID<br>
  * 时间精确到秒，ID最大值为99999且循环使用
  * 
- * @Author:chenssy
+ * @Author:wukailun
  * @date:2016年4月17日
  */
 public class GenerateSequenceUtil {
